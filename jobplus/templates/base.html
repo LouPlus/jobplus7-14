@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        {% block head_css %}
+        <link rel="stylesheet" href="http://labfile.oss.aliyuncs.com/courses/923/week7/code/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+        <style type='text/css'>
+            .footer {
+                height:40px;
+                background-color: #F7F7F7;
+                bottom:0;
+                width: 100%;
+                text-align: center;
+                font-size: 14px;
+             }
+        </style>
+        {% endblock %}
+    </head>
+    <body>
+       <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Jobplus</a>
+        </div>
